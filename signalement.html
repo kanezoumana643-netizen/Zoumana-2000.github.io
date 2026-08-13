@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IMPACT Alerte — Signaler un problème | Mouvement IMPACT Mali</title>
+<meta name="description" content="Signalez une inondation, un caniveau obstrué, une route dégradée ou tout autre problème dans votre quartier.">
+<link rel="icon" type="image/jpeg" href="assets/img/logo.jpg">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+
+<header>
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><img src="assets/img/logo.jpg" alt="Logo Mouvement IMPACT Mali"></span>
+      <span class="brand-text"><strong>Mouvement IMPACT</strong><span>Mali</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="bureau.html">Bureau exécutif</a></li>
+        <li><a href="actualites.html">Actualités</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="signalement.html" class="btn-alert active">🚨 Signaler</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="alert-hero">
+    <div class="container">
+      <p class="eyebrow">IMPACT Alerte</p>
+      <h1>Signalez un problème dans votre quartier</h1>
+      <p>Inondation, caniveau obstrué, déchets, route dégradée : décrivez la situation, nous transmettons l'information aux équipes concernées.</p>
+    </div>
+  </div>
+
+  <section style="padding-top:0;">
+    <div class="container">
+      <div class="form-wrap">
+
+        <div class="form-note">
+          ✅ Votre signalement est transmis directement au bureau exécutif du Mouvement IMPACT Mali, qui reçoit une notification par e-mail.
+        </div>
+
+        <form id="alert-form">
+          <div class="form-two">
+            <div class="form-row">
+              <label for="nom">Nom complet</label>
+              <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+            </div>
+            <div class="form-row">
+              <label for="telephone">Téléphone</label>
+              <input type="tel" id="telephone" name="telephone" placeholder="+223 00 00 00 00" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="quartier">Quartier / Commune</label>
+            <input type="text" id="quartier" name="quartier" placeholder="Ex. Sabalibougou, Commune V" required>
+          </div>
+
+          <div class="form-row">
+            <label for="type">Type de problème</label>
+            <select id="type" name="type" required>
+              <option value="">Sélectionnez...</option>
+              <option value="inondation">Inondation</option>
+              <option value="caniveau">Caniveau obstrué</option>
+              <option value="dechets">Accumulation de déchets</option>
+              <option value="route">Route ou infrastructure dégradée</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label>Niveau d'urgence</label>
+            <div class="severity-row">
+              <div class="severity-opt">
+                <input type="radio" id="sev-faible" name="urgence" value="faible">
+                <label for="sev-faible">Faible</label>
+              </div>
+              <div class="severity-opt">
+                <input type="radio" id="sev-moyen" name="urgence" value="moyen" checked>
+                <label for="sev-moyen">Moyen</label>
+              </div>
+              <div class="severity-opt">
+                <input type="radio" id="sev-eleve" name="urgence" value="eleve">
+                <label for="sev-eleve">Élevé</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="4" placeholder="Décrivez la situation observée..." required></textarea>
+            <p class="hint">Précisez un point de repère si possible (école, marché, carrefour...).</p>
+          </div>
+
+          <div class="form-row">
+            <label for="photo">Photo (optionnel)</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+            <p class="hint">Une photo aide les équipes à évaluer rapidement la situation.</p>
+          </div>
+
+          <button type="submit" class="submit-btn">Envoyer le signalement</button>
+        </form>
+
+        <div class="confirm-box" id="confirm-box">
+          <div class="ok">✓</div>
+          <h3>Signalement reçu</h3>
+          <p>Merci pour votre engagement citoyen. Notre équipe examine votre signalement.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Après votre signalement</p>
+        <h2>Comment nous traitons l'information</h2>
+      </div>
+      <div class="value-grid">
+        <div class="value"><h4>1. Réception</h4><p>Votre signalement est transmis au bureau exécutif du mouvement.</p></div>
+        <div class="value"><h4>2. Vérification</h4><p>Les équipes locales évaluent la situation sur le terrain quand nécessaire.</p></div>
+        <div class="value"><h4>3. Action ou transmission</h4><p>Selon le cas, nous agissons directement ou remontons l'information aux autorités compétentes.</p></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="assets/img/logo.jpg" alt="Logo Mouvement IMPACT Mali">
+          <strong style="color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;text-transform:uppercase;">Mouvement IMPACT Mali</strong>
+        </div>
+        <p>Initiative malienne pour le progrès, l'action citoyenne et la transformation. Agir aujourd'hui. Transformer demain.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="bureau.html">Bureau exécutif</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="signalement.html">Signaler un problème</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contactmouvementimpactmali@gmail.com">contactmouvementimpactmali@gmail.com</a></li>
+          <li><a href="contact.html">Nous contacter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mouvement IMPACT Mali. Tous droits réservés.</span>
+      <span>Statut juridique en cours d'enregistrement</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
